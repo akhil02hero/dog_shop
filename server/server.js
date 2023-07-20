@@ -6,6 +6,10 @@ app.get("/api", (req, res) => {
   res.json({ users: ["akhil", "adithya"] });
 });
 
+app.get("/dogs/pitcures", (req, res) => {
+  res.json();
+});
+
 app.get("/api/users", (req, res) => {
   res.json({ akhil: "UI", adithya: "UI" });
 });

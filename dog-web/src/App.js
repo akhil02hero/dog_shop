@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import Test from "./Test";
 
 const App = () => {
-  const [data, setdata] = useState([{}]);
-  useEffect(() => {
-    fetch("/api/users")
-      .then((response) => response.json())
-      .then((response) => setdata(response));
-  }, []);
-  console.log(data);
-
-  return <div>App</div>;
+  return (
+    <div>
+      App
+      <Test />;
+    </div>
+  );
 };
 
 export default App;
